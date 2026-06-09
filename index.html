@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inker Robotics</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Fraunces:wght@700;900&amp;display=swap" rel="stylesheet">
+  <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-display { font-family: 'Fraunces', serif; }
+        .page { display: none; }
+        .page.active { display: block; }
+        .card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .fade-in { animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ <script src="/_sdk/telemetry_sdk.js"></script></head>
+ <body data-template-id="__page-root" class="min-h-screen" style="background: rgb(10, 14, 23);"><!-- Navigation -->
+  <nav data-template-id="nav-bar" class="canva-header fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/10" style="background: rgba(10, 14, 23, 0.85);">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"><a href="#home" data-template-id="nav-logo" class="canva-text font-display text-2xl font-bold" style="color: rgb(0, 229, 255); font-weight: bold; font-style: normal; font-size: 16px;">INKER ROBOTICS</a>
+    <div class="flex gap-8"><a href="#home" data-template-id="nav-home" class="canva-link hover:opacity-80 transition-opacity font-medium" style="color: rgb(224, 231, 239); font-weight: 400; font-style: normal; font-size: 16px;">Home</a> <a href="#services" data-template-id="nav-services" class="canva-link hover:opacity-80 transition-opacity font-medium" style="color: rgb(224, 231, 239); font-weight: 400; font-style: normal; font-size: 16px;">Services</a> <a href="#sales" data-template-id="nav-sales" class="canva-link hover:opacity-80 transition-opacity font-medium" style="color: rgb(224, 231, 239); font-weight: 400; font-style: normal; font-size: 16px;">Sales</a>
+    </div>
+   </div>
+  </nav><!-- HOME PAGE -->
+  <div id="page-home" class="page active">
+   <header class="pt-24 pb-16 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center min-h-[70vh]">
+     <div class="fade-in">
+      <h1 data-template-id="hero-title" class="canva-text font-display leading-tight mb-6" style="color: rgb(255, 255, 255); font-weight: 900; font-style: normal; font-size: 32px;">Building the Future with Intelligent Robotics</h1>
+      <p data-template-id="hero-subtitle" class="canva-text text-lg mb-8 opacity-80" style="color: rgb(176, 190, 197); font-weight: 400; font-style: normal; font-size: 16px;">From industrial automation to collaborative cobots — Inker Robotics delivers cutting-edge solutions for the modern enterprise.</p>
+      <div class="flex gap-4"><a href="#services" data-template-id="hero-cta-services" class="canva-button px-6 py-3 rounded-lg font-semibold transition-transform hover:scale-105 inline-block" style="background: rgb(0, 229, 255); color: rgb(10, 14, 23); font-weight: 700; font-style: normal; font-size: 16px;">Our Services</a> <a href="#sales" data-template-id="hero-cta-sales" class="canva-button px-6 py-3 rounded-lg font-semibold transition-transform hover:scale-105 inline-block border-2" style="background: transparent; color: rgb(0, 229, 255); font-weight: 700; font-style: normal; font-size: 16px;">View Robots</a>
+      </div>
+     </div>
+     <div><img data-template-id="hero-image" class="canva-image w-full h-96 object-cover rounded-2xl shadow-2xl" loading="lazy" src="https://images.pexels.com/photos/8294630/pexels-photo-8294630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Studio shot of a humanoid robot with glowing eyes against a dark background">
+     </div>
+    </div>
+   </header><!-- Services Preview -->
+   <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+     <h2 data-template-id="home-services-heading" class="canva-text font-display text-center mb-12" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Our Services</h2>
+     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><a href="#services" data-template-id="home-svc-1" class="canva-card card-hover p-6 rounded-xl cursor-pointer block" style="background: rgb(19, 26, 43);">
+       <div class="mb-3">
+        <i data-lucide="wrench" class="w-8 h-8"></i>
+       </div><h3 data-template-id="home-svc-1-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Maintenance &amp; Repair</h3><p data-template-id="home-svc-1-desc" class="canva-text text-sm opacity-70" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Keep your robots running at peak performance with our expert maintenance team.</p></a> <a href="#services" data-template-id="home-svc-2" class="canva-card card-hover p-6 rounded-xl cursor-pointer block" style="background: rgb(19, 26, 43);">
+       <div class="mb-3">
+        <i data-lucide="cpu" class="w-8 h-8"></i>
+       </div><h3 data-template-id="home-svc-2-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">System Integration</h3><p data-template-id="home-svc-2-desc" class="canva-text text-sm opacity-70" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Seamless integration of robotic systems into your existing workflows.</p></a> <a href="#services" data-template-id="home-svc-3" class="canva-card card-hover p-6 rounded-xl cursor-pointer block" style="background: rgb(19, 26, 43);">
+       <div class="mb-3">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+       </div><h3 data-template-id="home-svc-3-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Consulting</h3><p data-template-id="home-svc-3-desc" class="canva-text text-sm opacity-70" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Strategic advice on automation roadmaps and ROI optimization.</p></a> <a href="#services" data-template-id="home-svc-4" class="canva-card card-hover p-6 rounded-xl cursor-pointer block" style="background: rgb(19, 26, 43);">
+       <div class="mb-3">
+        <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+       </div><h3 data-template-id="home-svc-4-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Training Programs</h3><p data-template-id="home-svc-4-desc" class="canva-text text-sm opacity-70" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Hands-on training for your team to operate and maintain robotic systems.</p></a>
+     </div>
+    </div>
+   </section><!-- Sales Preview -->
+   <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+     <h2 data-template-id="home-sales-heading" class="canva-text font-display text-center mb-12" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Our Robots</h2>
+     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"><a href="#sales" data-template-id="home-robot-1" class="canva-card card-hover rounded-xl overflow-hidden cursor-pointer block" style="background: rgb(19, 26, 43);"> <img data-template-id="home-robot-1-img" class="canva-image w-full h-44 object-cover" loading="lazy" src="https://images.pexels.com/photos/11951215/pexels-photo-11951215.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A robotic arm welding in an industrial setting">
+       <div class="p-4">
+        <h3 data-template-id="home-robot-1-name" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">INK-WX500 Welding Arm</h3>
+       </div></a> <a href="#sales" data-template-id="home-robot-2" class="canva-card card-hover rounded-xl overflow-hidden cursor-pointer block" style="background: rgb(19, 26, 43);"> <img data-template-id="home-robot-2-img" class="canva-image w-full h-44 object-cover" loading="lazy" src="https://images.pexels.com/photos/36522028/pexels-photo-36522028.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Automated warehouse system with robotic arm">
+       <div class="p-4">
+        <h3 data-template-id="home-robot-2-name" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">INK-MR200 Mobile Robot</h3>
+       </div></a> <a href="#sales" data-template-id="home-robot-3" class="canva-card card-hover rounded-xl overflow-hidden cursor-pointer block" style="background: rgb(19, 26, 43);"> <img data-template-id="home-robot-3-img" class="canva-image w-full h-44 object-cover" loading="lazy" src="https://images.pexels.com/photos/8438974/pexels-photo-8438974.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A woman and a robot arm collaboratively holding a flower">
+       <div class="p-4">
+        <h3 data-template-id="home-robot-3-name" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">INK-CB100 Cobot</h3>
+       </div></a> <a href="#sales" data-template-id="home-robot-4" class="canva-card card-hover rounded-xl overflow-hidden cursor-pointer block" style="background: rgb(19, 26, 43);"> <img data-template-id="home-robot-4-img" class="canva-image w-full h-44 object-cover" loading="lazy" src="https://images.pexels.com/photos/34182342/pexels-photo-34182342.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Specialized agricultural drone flying outdoors">
+       <div class="p-4">
+        <h3 data-template-id="home-robot-4-name" class="canva-text font-semibold" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">INK-DR50 Inspection Drone</h3>
+       </div></a>
+     </div>
+    </div>
+   </section>
+  </div><!-- SERVICES PAGE -->
+  <div id="page-services" class="page">
+   <header class="pt-24 pb-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center min-h-[50vh]">
+     <div class="fade-in">
+      <h1 data-template-id="services-title" class="canva-text font-display leading-tight mb-4" style="color: rgb(255, 255, 255); font-weight: 900; font-style: normal; font-size: 32px;">Services We Provide</h1>
+      <p data-template-id="services-subtitle" class="canva-text text-lg opacity-80" style="color: rgb(176, 190, 197); font-weight: 400; font-style: normal; font-size: 16px;">End-to-end robotics solutions — from initial consultation to long-term maintenance and operator training.</p>
+     </div><img data-template-id="services-hero-img" class="canva-image w-full h-72 object-cover rounded-2xl shadow-xl" loading="lazy" src="https://images.pexels.com/photos/18471441/pexels-photo-18471441.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Robotic arms in action within a modern industrial control room">
+    </div>
+   </header>
+   <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+     <div data-template-id="svc-card-1" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="svc-card-1-img" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/9242911/pexels-photo-9242911.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Hands of a technician repairing robotic machinery">
+      <div class="p-6">
+       <h3 data-template-id="svc-card-1-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Maintenance &amp; Repair</h3>
+       <p data-template-id="svc-card-1-desc" class="canva-text text-sm opacity-75" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Preventive and corrective maintenance programs to minimise downtime. Our certified engineers service all major robot brands with 24/7 emergency support.</p>
+      </div>
+     </div>
+     <div data-template-id="svc-card-2" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="svc-card-2-img" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/5380618/pexels-photo-5380618.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Computer displaying cybersecurity and data protection interfaces">
+      <div class="p-6">
+       <h3 data-template-id="svc-card-2-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">System Integration</h3>
+       <p data-template-id="svc-card-2-desc" class="canva-text text-sm opacity-75" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">We integrate robots into your production line with custom programming, sensor calibration, and PLC connectivity for seamless operation.</p>
+      </div>
+     </div>
+     <div data-template-id="svc-card-3" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="svc-card-3-img" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/7222867/pexels-photo-7222867.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Two professionals discussing business strategy with a digital presentation board">
+      <div class="p-6">
+       <h3 data-template-id="svc-card-3-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Automation Consulting</h3>
+       <p data-template-id="svc-card-3-desc" class="canva-text text-sm opacity-75" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Strategic assessments, feasibility studies, and automation roadmaps tailored to your industry and budget constraints.</p>
+      </div>
+     </div>
+     <div data-template-id="svc-card-4" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="svc-card-4-img" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/9242834/pexels-photo-9242834.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Students engaged in assembling a robotics project in an educational lab">
+      <div class="p-6">
+       <h3 data-template-id="svc-card-4-title" class="canva-text font-semibold mb-2" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 19px;">Training Programs</h3>
+       <p data-template-id="svc-card-4-desc" class="canva-text text-sm opacity-75" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Hands-on workshops and certification courses for operators, technicians, and engineers to safely work alongside robotic systems.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div><!-- SALES PAGE -->
+  <div id="page-sales" class="page">
+   <header class="pt-24 pb-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center min-h-[50vh]">
+     <div class="fade-in">
+      <h1 data-template-id="sales-title" class="canva-text font-display leading-tight mb-4" style="color: rgb(255, 255, 255); font-weight: 900; font-style: normal; font-size: 32px;">Robots We Sell</h1>
+      <p data-template-id="sales-subtitle" class="canva-text text-lg opacity-80" style="color: rgb(176, 190, 197); font-weight: 400; font-style: normal; font-size: 16px;">Explore our lineup of industrial robots, collaborative cobots, mobile platforms, and aerial drones built for performance.</p>
+     </div><img data-template-id="sales-hero-img" class="canva-image w-full h-72 object-cover rounded-2xl shadow-xl" loading="lazy" src="https://images.pexels.com/photos/8294549/pexels-photo-8294549.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Stylish robot against a dark backdrop showcasing futuristic technology">
+    </div>
+   </header>
+   <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+     <div data-template-id="robot-card-1" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="robot-card-1-img" class="canva-image w-full h-56 object-cover" loading="lazy" src="https://images.pexels.com/photos/11951215/pexels-photo-11951215.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A robotic arm welding in an industrial setting emitting bright sparks">
+      <div class="p-6">
+       <h3 data-template-id="robot-card-1-name" class="canva-text font-semibold mb-1" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">INK-WX500 Welding Arm</h3>
+       <p data-template-id="robot-card-1-desc" class="canva-text text-sm opacity-75 mb-3" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">6-axis industrial welding robot with 500kg payload. Precision arc welding for automotive and heavy manufacturing.</p><span data-template-id="robot-card-1-price" class="canva-tag inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background: rgba(0, 229, 255, 0.125); color: rgb(0, 229, 255); font-weight: 400; font-style: normal; font-size: 16px;">From ₹45,00,000</span>
+      </div>
+     </div>
+     <div data-template-id="robot-card-2" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="robot-card-2-img" class="canva-image w-full h-56 object-cover" loading="lazy" src="https://images.pexels.com/photos/36522028/pexels-photo-36522028.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="High-tech automated warehouse system with green robotic arm">
+      <div class="p-6">
+       <h3 data-template-id="robot-card-2-name" class="canva-text font-semibold mb-1" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">INK-MR200 Mobile Robot</h3>
+       <p data-template-id="robot-card-2-desc" class="canva-text text-sm opacity-75 mb-3" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Autonomous mobile robot for warehouse logistics. LIDAR navigation, 200kg carrying capacity, fleet-ready.</p><span data-template-id="robot-card-2-price" class="canva-tag inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background: rgba(0, 229, 255, 0.125); color: rgb(0, 229, 255); font-weight: 400; font-style: normal; font-size: 16px;">From ₹18,00,000</span>
+      </div>
+     </div>
+     <div data-template-id="robot-card-3" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="robot-card-3-img" class="canva-image w-full h-56 object-cover" loading="lazy" src="https://images.pexels.com/photos/8438974/pexels-photo-8438974.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A woman and a robot arm collaboratively holding a flower">
+      <div class="p-6">
+       <h3 data-template-id="robot-card-3-name" class="canva-text font-semibold mb-1" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">INK-CB100 Collaborative Robot</h3>
+       <p data-template-id="robot-card-3-desc" class="canva-text text-sm opacity-75 mb-3" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Safe human-robot collaboration with force-sensing. Ideal for assembly, packaging, and quality inspection tasks.</p><span data-template-id="robot-card-3-price" class="canva-tag inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background: rgba(0, 229, 255, 0.125); color: rgb(0, 229, 255); font-weight: 400; font-style: normal; font-size: 16px;">From ₹12,00,000</span>
+      </div>
+     </div>
+     <div data-template-id="robot-card-4" class="canva-card card-hover rounded-xl overflow-hidden" style="background: rgb(19, 26, 43);"><img data-template-id="robot-card-4-img" class="canva-image w-full h-56 object-cover" loading="lazy" src="https://images.pexels.com/photos/34182342/pexels-photo-34182342.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Specialized drone flying outdoors showcasing modern technology">
+      <div class="p-6">
+       <h3 data-template-id="robot-card-4-name" class="canva-text font-semibold mb-1" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;">INK-DR50 Inspection Drone</h3>
+       <p data-template-id="robot-card-4-desc" class="canva-text text-sm opacity-75 mb-3" style="color: rgb(144, 164, 174); font-weight: 400; font-style: normal; font-size: 16px;">Industrial-grade aerial drone for infrastructure inspection, thermal imaging, and surveying with 50-min flight time.</p><span data-template-id="robot-card-4-price" class="canva-tag inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background: rgba(0, 229, 255, 0.125); color: rgb(0, 229, 255); font-weight: 400; font-style: normal; font-size: 16px;">From ₹8,50,000</span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div><!-- Footer -->
+  <footer data-template-id="footer-section" class="canva-footer py-8 px-6 border-t border-white/10 mt-12" style="background: rgb(6, 9, 16);">
+   <div class="max-w-7xl mx-auto text-center">
+    <p data-template-id="footer-text" class="canva-text text-sm opacity-60" style="color: rgb(96, 125, 139); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Inker Robotics. All rights reserved.</p>
+   </div>
+  </footer>
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+        function navigate() {
+            const hash = window.location.hash || '#home';
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            const pageId = 'page-' + hash.slice(1);
+            const target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+            } else {
+                document.getElementById('page-home').classList.add('active');
+            }
+            window.scrollTo(0, 0);
+        }
+        window.addEventListener('hashchange', navigate);
+        window.addEventListener('DOMContentLoaded', () => {
+            navigate();
+            lucide.createIcons();
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a08dfa5b5e7a7d83',t:'MTc4MDk4NTQ3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
